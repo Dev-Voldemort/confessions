@@ -1,0 +1,203 @@
+.parent{
+  height: 100vh;
+  display: flexbox;
+  width: 100%;
+}
+.textbox{
+  margin: auto;
+  display: block;
+}
+.btn{
+  margin: auto;
+}
+
+.gp-img{
+  float: left;
+  height: 50px;
+  max-width: 80px;
+  max-height: 250px;
+}
+header {
+  background-color: #A683E3;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: 0 16px;
+  overflow-x: hidden;
+}
+header h1 {
+  display: inline;
+  margin-left: 5px;
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #A683E3;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+ /* REGISTRATION BUTTON */
+
+.btn {
+  float: right;
+  font-family: Montserrat;
+  text-decoration: none;
+  color: white;
+  display: inline;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.box {
+  width: 40%;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  padding: 1%;
+  color: #fff;
+  font-family: "McLaren", cursive;
+  background-color: #A683E3;
+  text-align: center;
+}
+
+.admin-p{
+  width: max-content;
+  display: inline;
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+.admin-l, .admin-r{
+  margin: 20px;
+}
+
+.item{
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+  margin: auto;
+}
+  
+.item:last-child {
+  border-bottom: 0;
+}
+ 
+.placeholder-div{
+  display: flex;
+}
+
+.placeholder-item {
+  box-shadow: 0 4px 10px 0 rgba(33, 33, 33, 0.15);
+  border-radius: 0.3rem;
+  height: 76px;
+  width: 100%;
+  margin: 0.5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -150px;
+  top: 0;
+  height: 76px;
+  width: 100%;
+  background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+  animation: load 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+@keyframes load {
+  from {
+      left: -150px;
+  }
+  to   {
+      left: 100%;
+  }
+}
+
+.timer{
+  text-align: center; 
+  position: relative;
+  font-size: 100px;
+}
+.div{
+  height: max-content;
+  width: 25%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
