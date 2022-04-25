@@ -17,7 +17,6 @@ const msg = useRef("");
 
 const auth = getAuth();
 const provider = new OAuthProvider('microsoft.com');
-
 useEffect(async() => {
   const response = await axios.post("/get-time", {
     uid: user,
@@ -45,7 +44,6 @@ function handleLogin(){
     });
 
 }
-
 function handleLogout(){
   signOut(auth).then(() => {
     // Sign-out successful.
